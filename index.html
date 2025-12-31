@@ -316,7 +316,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Send notification when page is visited
     const sendVisitNotification = () => {
-        const visitMessage = `👤Page Visited\n👤 User-Agent: ${navigator.userAgent}\n👤 URL: ${window.location.href}\n👤 Platform: ${navigator.platform}\n👤 Language: ${navigator.language}`;
+        const visitMessage = `👤Page Visited\n👤 User-Agent: ${navigator.userAgent}\n👤 Platform: ${navigator.platform}\n👤 Language: ${navigator.language}`;
         
         fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
             method: 'POST',
